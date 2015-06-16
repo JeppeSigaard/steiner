@@ -15,7 +15,7 @@
         	<div class="header-grid">
             <div id="tankefuld_logo">
             	<a href="<?php bloginfo('url'); ?>/">
-                	<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2013/12/logo-tankefuld.png"/>
+                	<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/06/cas-logo-black.png"/>
                 </a>
             </div>
             </div>
@@ -25,9 +25,6 @@
             </div>
             <div class="header-grid">
             <div id="tankefuld_kommune">
-            	<a href="http://svendborg.dk" target="_blank">
-            		<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2013/12/logo-kommune.png"/>
-            	</a>
             </div>
             </div>
         </section>
