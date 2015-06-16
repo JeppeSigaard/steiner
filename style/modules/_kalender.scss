@@ -1,0 +1,32 @@
+/* Kalender widget */
+/*------------------------------------------------------------------------*/
+
+.eo-events-widget{
+	margin:0 -10px;
+	}
+	
+.eo-event-future, .eo-event-past, .eo-event-running{
+	border-top:2px solid $event-border-color;
+	margin-top:0px;
+	padding:24px 10px 10px;
+	}
+
+.event-date {
+	color:$event-text-color;
+	display: inline-block;
+	float: right;
+	margin-top: -14px;
+	box-shadow: 10px 0 0 $article-header-shadow-color, -5px 0 0 $article-header-shadow-color;
+	behavior: url(../PIE/PIE.htc);
+	background: $aritcle-header-bg-fill;
+	font-size: 20px;
+	padding: 2px;
+	}
+
+.eo-event-future p{
+	transition:.2s;
+	behavior: url(../PIE/PIE.htc);
+	}
+.eo-event-future p:hover{
+	color:$event-text-color;
+	}

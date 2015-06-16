@@ -1,0 +1,31 @@
+/* FOOTER */
+/*------------------------------------------------------------------------*/
+
+#footer{
+	background:$footer-bg;
+	text-align:center;
+	border-top:2px solid $footer-border-top-color;
+	color:$footer-text-color;
+	padding:50px 0px;
+	font-size:.9rem;
+	}
+
+#back_up{
+	height:135px;
+	width:135px;
+	display:inline-block;
+	text-align:center;
+	margin:0px auto 50px;
+	cursor:pointer;
+	opacity:.9;
+	transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	background-image:$footer-to-top-image;
+	background-position:center;
+	background-repeat:no-repeat;
+	behavior: url(../PIE/PIE.htc);
+	}
+#back_up:hover{
+	opacity:1;
+	}

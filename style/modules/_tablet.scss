@@ -1,0 +1,134 @@
+/* Tablet */
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@media (max-width:960px){
+	
+	#header{
+		border-bottom:0;
+		}
+	.home #header{
+		border-bottom:2px solid $header-border-bottom-color;
+		}
+	
+	.wrap-960{
+		width:640px;
+		}
+	.home .header-grid{
+		width:50%;
+		}
+	
+	.home #site-title {
+		margin-top: 10px;
+		}
+	
+	.home #site-description {
+		line-height: 1.2;
+		width: 185px;
+		}
+	
+	.header-grid:nth-child(3){
+		margin-top:20px;
+		}
+	.home .header-grid:nth-child(3){
+		float: right;
+		width: 80px;
+		margin-top: -120px;
+		margin-right: 30px;
+		}
+	.header-grid:nth-child(3) img{
+		width:40px;
+		}
+		
+	/* Sider */
+	
+	.article-content .nav_stone{
+		display:none;
+		}
+	.article-content .mob_nav_stone{
+		height:auto;
+		background-image:$box-top-white;
+		width:600px;
+		background-position:20px top;
+		padding: 30px 20px 0px;
+		margin: 0px 0px 80px 0px;
+		}
+	.article-content.event .mob_nav_stone{
+		width:280px;
+		}
+	
+	
+	/* MeNU */
+	/* --------------------------------------- */
+	
+	#mobile-expand {
+		display:block;
+		margin: 20px 0px 0px;
+		width: 100%;
+		height: 2px;
+		display: block;
+		background: $mobile-expand-bg-color;
+		}
+	.home #mobile-expand {
+		display:none;
+		}
+	
+	#mobile-expand div{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		transition:.2s ease-in-out;
+		-webkit-transition:.2s ease-in-out;
+		-moz-transition:.2s ease-in-out;
+		}
+	
+	#mobile-expand img {
+		position: relative;
+		display: block;
+		width: 65px;
+		margin: -21px auto;
+		}
+	
+	#swipe-menu .menu-hovedmenu-container{
+		height: 100%;
+		overflow: scroll;
+		}
+	
+	/* Mobilknap vises og skjules med ren magi*/
+	#mobile-expand img:first-child {
+		display:block;
+		}
+	#mobile-expand img:nth-child(2){
+		display:none;
+		}
+	#mobile-expand.expand img:first-child {
+		display:none;
+		}
+	#mobile-expand.expand img:nth-child(2){
+		display:block;
+		}
+	
+	#mobile-expand.expand div{
+		margin-left:90px;
+		}
+	/* --------------------------------------- */
+	
+	#swipe-menu {
+		z-index:-1;
+		display:block;
+		position: fixed;
+		top: 0;
+		right: 0px;
+		height: 100%;
+		width: 180px;
+		background: $swipe-menu-background;
+		border-left: 2px solid $swipe-menu-border-left-color;
+	}
+	
+	#swipe-menu .menu li:first-child a{
+		border-width: 0px 0px 1px;
+		}
+	
+	/* -------------------- */
+	
+	}

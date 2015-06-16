@@ -1,0 +1,811 @@
+/*
+Theme Name: tankefuld v2
+Theme URI: http://wordpress.org/themes/tankefuld
+Author: Tairy
+Author URI: http://tairy.org
+Description: For spørgsmål til brug af wordpress, tøv ikke med at kontakte mig på <a href="mailto:tankefuld@tairy.org">tankefuld@tairy.org</a>  Kh Jeppe
+Version: 2.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: tankefuld
+
+tankefuld WordPress Theme © 2013 Tairy
+*/
+/*------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'century_gothic';
+    src: url('century-gothic/gothic_0-webfont.eot');
+    src: url('century-gothic/gothic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('century-gothic/gothic_0-webfont.woff') format('woff'),
+         url('century-gothic/gothic_0-webfont.ttf') format('truetype'),
+         url('century-gothic/gothic_0-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'century_gothic_bold';
+    src: url('century-gothic/gothicb-webfont.eot');
+    src: url('century-gothic/gothicb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('century-gothic/gothicb-webfont.woff') format('woff'),
+         url('century-gothic/gothicb-webfont.ttf') format('truetype'),
+         url('century-gothic/gothicb-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+a{
+	color:#000;
+	text-decoration:underline;
+	}
+a:hover{
+	text-decoration:line-through;
+	}
+
+body{
+	width:100%;
+	overflow-x:hidden;
+	background:#333;
+	font-family:century_gothic;
+	font-weight:100;
+	-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+#wrapper{
+	z-index: 1;
+	background: #333;
+	}
+	
+.wrap-960{
+	width:960px;
+	margin:0 auto;
+	transition:.2s;
+	-webkit-transition:.2s;
+	}
+	
+/* UNDERSIDE HEADER */
+/*------------------------------------------------------------------------*/
+#header{
+	padding:30px 0;
+	border-bottom:2px solid #ccc;
+	}
+	
+.header-grid{
+	display:inline-block;
+	margin:0 -2px;
+	padding:0;
+	vertical-align:middle;
+	}
+
+#tankefuld_logo img{
+	width:85px;
+	margin:auto;
+	margin: 0 40px 0 0;
+	}
+	
+#site-title, #site-title a {
+	line-height:1.4;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 39px;
+	color: #ddbe97;
+	text-decoration: none;
+	text-align: left;
+	}
+
+#site-description {
+	display:block;
+	width:350px;
+	font-size: 20px;
+	color: #fff;
+	}
+
+.header-grid:nth-child(3){
+	float:right;
+	margin-right:20px;
+	opacity:.9;
+	-webkit-opacity:.9;
+	-moz-opacity:.9;
+	}
+#tankefuld_logo{
+	margin:auto auto auto 20px;
+	}
+
+/* FONT */
+/*------------------------------------------------------------------------*/
+p {
+line-height: 1.3;
+margin: 0px 0px 15px;
+font-size: 14px;
+}
+
+strong{
+	font-family:century_gothic_bold;
+	}
+
+/* FORSIDE HEADER */
+/*------------------------------------------------------------------------*/
+.home #header{
+	padding:50px 0;
+	border-bottom:2px solid #ccc;
+	}
+
+.home #branding{
+	min-height:208px;
+	}
+
+.home .header-grid{
+	display:inline-block;
+	margin:0 -2px;
+	padding:0;
+	width:33.3333333333%;
+	vertical-align:top;
+	float:none;
+	}
+
+.home #tankefuld_logo{
+	width:203px;
+	margin:auto;
+	}
+.home #tankefuld_logo img{
+	width:203px;
+	}
+	
+.home #site-title, .home #site-title a {
+	line-height:1.2;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 45px;
+	color: #ddbe97;
+	text-decoration: none;
+	text-align: left;
+	}
+	
+.home #site-title{
+	margin-left:20px;
+	margin-top:50px;
+	margin-bottom:20px;
+	}
+	
+.home #site-description {
+	display:block;
+	width:350px;
+	margin-left:20px;
+	font-size: 20px;
+	color: #fff;
+	}
+
+.home #tankefuld_kommune {
+padding-top: 50px;
+padding-right:20px;
+text-align: right;
+opacity:.8;
+}
+	
+/* CONTAINER */
+/*------------------------------------------------------------------------*/
+
+#container{
+	background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/bg-white-shaddow.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	padding-top:50px;
+	min-height:900px;
+	}
+	
+/* MENU */
+/*------------------------------------------------------------------------*/
+#swipe-menu {
+	display:none;
+	}
+.menu{
+	opacity:.9;
+	}
+
+.menu li a{
+	font-size:14px;
+	display: block;
+	color: #fff;
+	padding:12px 0px 12px 10px;
+	text-decoration:none;
+	background:#333;
+	border-color:#fff;
+	border-style:solid;
+	border-width:0px 0px 1px 0px;
+	transition:.2s;
+	-webkit-transition:.2s;
+	}
+	
+.menu li:first-child a{
+	border-width:1px 0px;
+	}
+
+.menu li a:hover, li.current-menu-item a{
+	background:#666;
+	}
+.menu li.current-menu-item a:hover{
+	cursor:default;
+	}
+#mobile-expand{
+	display:none;
+	}
+
+/* STONES */
+/*------------------------------------------------------------------------*/
+
+.tf_stone {
+float:left;
+width: 280px;
+padding: 30px 20px 0px;
+margin:0px 0px 80px 0px;
+background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-houses-top-wood.png);
+background-repeat:no-repeat;
+background-position:center top;
+}
+.nav_stone{
+	background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-houses-top-white.png);
+	}
+
+.mob_nav_stone{
+	background-image:none;
+	height:0px;
+	width:0px;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	}
+.big_stone{
+	width:600px;
+	background-position: 20px top;
+	}
+
+
+.wood_stone .widget-container, .big_stone article{
+	padding:10px;
+	background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-bg-wood.png);
+	}
+
+
+/* ARTIKLER */
+
+.wood_stone article .entry-content{
+	margin-top:10px;
+	background:rgba(255,255,255,.8);
+	padding: 20px;
+	}
+
+.wood_stone article .entry-content p{
+	line-height:1.3;
+	margin-bottom:15px;
+	font-size:14px;
+	}
+.wood_stone article .entry-content	h1{
+	box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	}
+.wood_stone article .entry-content strong{
+	font-family:century_gothic_bold;
+	}
+img{
+	max-width:100%!important;
+	height:auto!important;
+	}
+
+
+/* --------------------------------- */
+
+/* Aligment */
+
+.alignleft{
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	max-width:50%!important;
+	}
+.alignright{
+	float:left;
+	margin-left:20px;
+	margin-bottom:20px;
+	max-width:50%!important;
+	}
+
+
+/* --------------------------------- */
+
+.wood_stone .widget-container .widget-title{
+	padding: 0px 0px 10px;
+	}
+.wood_stone .widget-container h3, .fpw-page-title, .wood_stone .widget-container h1, .wood_stone article h1, .wood_stone .entry-header h3{
+	color:#000;
+	text-decoration:none;
+	background: #fff;
+	display: inline;
+	font-size: 20px;
+	line-height: 1.65;
+	box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	-moz-box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	}
+
+body .fpw-layout-wrapped .fpw-featured-image {
+  float: none;
+  width: auto;
+  margin: 10px;
+  overflow: visible;
+}
+
+
+	
+.wood_stone .widget-container h1, .wood_stone article h1, .wood_stone .EO_Event_List_Widget h3{
+	font-size: 30px;
+	margin-left: 0px;
+	box-shadow: 35px 0 0 #fff, -10px 0 0 #fff;
+	-moz-box-shadow: 35px 0 0 #fff, -10px 0 0 #fff;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	}
+	
+.big_stone .type-event h1{
+	box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	-moz-box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	}
+
+.wood_stone .widget-container img{
+	width:100%;
+	height: auto!important;
+	transition:.2s;
+	-webkit-transition:.2s;
+	-moz-transition:.2s;
+	}
+
+	.wood_stone .widget-container img:hover{
+	/* Indsæt hoverfunnktion */
+	}
+
+.wood_stone .widget-container p{
+	font-size:15px;
+	margin: 10px -10px;
+	padding: 10px 10px 15px;
+	line-height: 1.3;
+	background: rgba(255,255,255,.8);
+	color:#4d4d4d;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	}
+.front-widget-shade{
+	margin: 0;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 30px;
+	background: url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-shadow-bottom.png);
+	background-position: center -2px;
+	background-repeat: no-repeat;
+	}
+
+/* Kalender widget */
+/*------------------------------------------------------------------------*/
+
+.eo-events-widget{
+	margin:0 -10px;
+	}
+	
+.eo-event-future, .eo-event-past, .eo-event-running{
+	border-top:2px solid #444;
+	margin-top:0px;
+	padding:24px 10px 10px;
+	}
+
+.event-date {
+	color:#000;
+	display: inline-block;
+	float: right;
+	margin-top: -14px;
+	box-shadow: 10px 0 0 #fff, -5px 0 0 #fff;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	background: #fff;
+	font-size: 20px;
+	padding: 2px;
+	}
+
+.eo-event-future p{
+	transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	}
+.eo-event-future p:hover{
+	color:#000;
+	}
+
+/* FOOTER */
+/*------------------------------------------------------------------------*/
+
+#footer{
+	background:#313131;
+	text-align:center;
+	border-top:2px solid #ccc;
+	color:#ccc;
+	padding:50px 0px;
+	font-size:.9rem;
+	}
+
+#back_up{
+	height:135px;
+	width:135px;
+	display:inline-block;
+	text-align:center;
+	margin:0px auto 50px;
+	cursor:pointer;
+	opacity:.9;
+	transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/footer-til-top.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+	}
+#back_up:hover{
+	opacity:1;
+	}
+
+/* 1280px - 960px */
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+@media (max-width:1280px){
+	
+	}
+
+
+/* Tablet */
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@media (max-width:960px){
+	
+	#header{
+		border-bottom:0;
+		}
+	.home #header{
+		border-bottom:2px solid #ccc;
+		}
+	
+	.wrap-960{
+		width:640px;
+		}
+	.home .header-grid{
+		width:50%;
+		}
+	
+	.home #site-title {
+		margin-top: 10px;
+		}
+	
+	.home #site-description {
+		line-height: 1.2;
+		width: 185px;
+		}
+	
+	.header-grid:nth-child(3){
+		margin-top:20px;
+		}
+	.home .header-grid:nth-child(3){
+		float: right;
+		width: 80px;
+		margin-top: -120px;
+		margin-right: 30px;
+		}
+	.header-grid:nth-child(3) img{
+		width:40px;
+		}
+		
+	/* Sider */
+	
+	.article-content .nav_stone{
+		display:none;
+		}
+	.article-content .mob_nav_stone{
+		height:auto;
+		background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-houses-top-white.png);
+		width:600px;
+		background-position:20px top;
+		padding: 30px 20px 0px;
+		margin: 0px 0px 80px 0px;
+		}
+	.article-content.event .mob_nav_stone{
+		width:280px;
+		}
+	
+	
+	/* MeNU */
+	/* --------------------------------------- */
+	
+	#mobile-expand {
+		display:block;
+		margin: 20px 0px 0px;
+		width: 100%;
+		height: 2px;
+		display: block;
+		background: #fff;
+		}
+	.home #mobile-expand {
+		display:none;
+		}
+	
+	#mobile-expand div{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		transition:.2s ease-in-out;
+		-webkit-transition:.2s ease-in-out;
+		-moz-transition:.2s ease-in-out;
+		}
+	
+	#mobile-expand img {
+		position: relative;
+		display: block;
+		width: 65px;
+		margin: -21px auto;
+		}
+	
+	#swipe-menu .menu-hovedmenu-container{
+		height: 100%;
+		overflow: scroll;
+		}
+	
+	/* Mobilknap vises og skjules med ren magi*/
+	#mobile-expand img:first-child {
+		display:block;
+		}
+	#mobile-expand img:nth-child(2){
+		display:none;
+		}
+	#mobile-expand.expand img:first-child {
+		display:none;
+		}
+	#mobile-expand.expand img:nth-child(2){
+		display:block;
+		}
+	
+	#mobile-expand.expand div{
+		margin-left:90px;
+		}
+	/* --------------------------------------- */
+	
+	#swipe-menu {
+		z-index:-1;
+		display:block;
+		position: fixed;
+		top: 0;
+		right: 0px;
+		height: 100%;
+		width: 180px;
+		background: #333;
+		border-left: 2px solid #666;
+	}
+	
+	#swipe-menu .menu li:first-child a{
+		border-width: 0px 0px 1px;
+		}
+	
+	/* -------------------- */
+	
+	}
+
+/* Telefon */
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@media (max-width:480px){
+	
+	#tankefuld_logo {
+		margin:auto;
+		}
+		
+	html, body{
+		width:100%;
+		min-width:320px;
+		overflow-x:hidden;
+		}
+	.wrap-960{
+		width:320px;
+		}
+/* UNDERSIDE HEADER */
+
+	#header {
+		padding: 10px 0;
+		border-bottom: none;
+		}
+
+	 .header-grid{
+		margin:0;
+		padding:10px 0px;
+		}
+	
+	.header-grid:nth-child(3){
+		display:none;/* Vi fjerner kommunen */
+		}
+	
+	#site-title, #site-title a {
+		font-size:20px;
+		}
+	#site-description {
+		font-size:13px;
+		width:auto;
+		}
+
+	#tankefuld_logo img {
+		margin: 0 10px 0 0;
+		width:70px;
+		}
+
+/* FORSIDE HEADER */
+	.home #header{
+		border-bottom:none;
+		padding:50px 0px 0px;
+		}
+	.header-wrap{
+		width:280px;
+		text-align:center;
+		}
+	.home .header-grid{
+		width:100%;
+		margin:0;
+		padding:10px 0px;
+		}
+	
+	.home .header-grid:nth-child(3){
+		display:block;
+		width: 280px;
+		float: none;
+		margin: 0;
+		text-align: left;
+		margin-top: -50px;
+		}
+	.home #tankefuld_kommune {
+		padding: 0;
+		text-align: left;
+		}
+	
+	.home #tankefuld_kommune img{
+		width:30px;
+		}
+	
+	.home #tankefuld_logo img{
+		width:85%;
+		margin:0;
+		}
+	
+	.home #site-title {
+		margin-left:auto;
+		margin-top: -245px;
+		}
+	
+	.home #site-title, .home #site-title a {
+		font-size: 25px;
+		}
+	.home #site-description {
+		display: block;
+		width: 100%;
+		margin-left: 20px;
+		font-size: 16px;
+		color: #fff;
+		margin-top: -5px;
+		}
+
+/* --------------------------------------- */
+/* MOBIL MENU*/
+/* --------------------------------------- */
+	
+	#mobile-expand {
+		margin: 20px 0px 0px;
+		width: 100%;
+		height: 2px;
+		display: block;
+		background: #fff;
+		}
+	.home #mobile-expand {
+		display:block;
+		margin: 40px 0px 0px;
+		}
+	
+	#mobile-expand div{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		transition:.2s ease-in-out;
+		-webkit-transition:.2s ease-in-out;
+		-moz-transition:.2s ease-in-out;
+		}
+	
+	#mobile-expand img {
+		position: relative;
+		display: block;
+		width: 65px;
+		margin: -21px auto;
+		}
+	
+	#swipe-menu .menu-hovedmenu-container{
+		height: 100%;
+		overflow: scroll;
+		}
+	.big_stone {
+	width: 280px;
+	}
+	
+	/* Mobilknap vises og skjules med ren magi*/
+	#mobile-expand img:first-child {
+		display:block;
+		}
+	#mobile-expand img:nth-child(2){
+		display:none;
+		}
+	#mobile-expand.expand img:first-child {
+		display:none;
+		}
+	#mobile-expand.expand img:nth-child(2){
+		display:block;
+		}
+	
+	#mobile-expand.expand div{
+		margin-left:90px;
+		}
+	/* --------------------------------------- */
+	
+	
+	#swipe-menu .menu li:first-child a{
+		border-width: 0px 0px 1px;
+		}
+	
+	#container{
+		background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/bg-white-shaddow.png);
+		background-size:cover;
+		-moz-background-size:cover;
+		background-position:center top;
+		background-repeat:no-repeat;
+		behavior: url(http://tairy.org/tankefuld/wp/wp-content/themes/Tankefuld/PIE/PIE.htc);
+		padding-top:80px;
+		}	
+		
+	.nav_stone{
+		display:none;
+		}
+	.mob_nav_stone, .article-content .mob_nav_stone{
+		height:auto;
+		background-image:url(http://tairy.org/tankefuld/wp/wp-content/uploads/2013/12/box-houses-top-white.png);
+		bakcground-position:center top;
+		width:280px;
+		padding: 30px 20px 0px;
+		margin: 0px 0px 80px 0px;
+		}
+	
+	#swipe-menu {
+		z-index:-1;
+		display:block;
+		position: fixed;
+		top: 0;
+		right: 0px;
+		height: 100%;
+		width: 180px;
+		background: #333;
+		border-left: 2px solid #666;
+	}
+	
+	#footer{
+		font-size:.7rem;
+		}
+	
+	.wood_stone article h1 {
+		font-size:25px;
+		}
+	
+	}
+	
+.tf_stone{
+	opacity:0;
+	}

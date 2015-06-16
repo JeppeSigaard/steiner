@@ -1,0 +1,108 @@
+/* UNDERSIDE HEADER */
+/*------------------------------------------------------------------------*/
+#header{
+	padding:30px 0;
+	border-bottom:2px solid $header-border-bottom-color;
+	}
+	
+.header-grid{
+	display:inline-block;
+	margin:0 -2px;
+	padding:0;
+	vertical-align:middle;
+	}
+
+#tankefuld_logo img{
+	width:85px;
+	margin:auto;
+	margin: 0 40px 0 0;
+	}
+	
+#site-title, #site-title a {
+	line-height:1.4;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 39px;
+	color: $header-site-title-color;
+	text-decoration: none;
+	text-align: left;
+	}
+
+#site-description {
+	display:block;
+	width:350px;
+	font-size: 20px;
+	color: $header-site-description-color;
+	}
+
+.header-grid:nth-child(3){
+	float:right;
+	margin-right:20px;
+	opacity:.9;
+	-webkit-opacity:.9;
+	-moz-opacity:.9;
+	}
+#tankefuld_logo{
+	margin:auto auto auto 20px;
+	}
+
+/* FORSIDE HEADER */
+/*------------------------------------------------------------------------*/
+.home #header{
+	padding:50px 0;
+	border-bottom:2px solid $header-border-bottom-color;
+	}
+
+.home #branding{
+	min-height:208px;
+	}
+
+.home .header-grid{
+	display:inline-block;
+	margin:0 -2px;
+	padding:0;
+	width:33.3333333333%;
+	vertical-align:top;
+	float:none;
+	}
+
+.home #tankefuld_logo{
+	width:203px;
+	margin:auto;
+	}
+.home #tankefuld_logo img{
+	width:203px;
+	}
+	
+.home #site-title, .home #site-title a {
+	line-height:1.2;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	font-size: 45px;
+	color: $header-site-title-color;
+	text-decoration: none;
+	text-align: left;
+	}
+	
+.home #site-title{
+	margin-left:20px;
+	margin-top:50px;
+	margin-bottom:20px;
+	}
+	
+.home #site-description {
+	display:block;
+	width:350px;
+	margin-left:20px;
+	font-size: 20px;
+	color: $header-site-description-color;
+	}
+
+.home #tankefuld_kommune {
+padding-top: 50px;
+padding-right:20px;
+text-align: right;
+opacity:.8;
+}

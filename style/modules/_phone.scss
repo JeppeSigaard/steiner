@@ -1,0 +1,209 @@
+/* Telefon */
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@media (max-width:480px){
+	
+	#tankefuld_logo {
+		margin:auto;
+		}
+		
+	html, body{
+		width:100%;
+		min-width:320px;
+		overflow-x:hidden;
+		}
+	.wrap-960{
+		width:320px;
+		}
+/* UNDERSIDE HEADER */
+
+	#header {
+		padding: 10px 0;
+		border-bottom: none;
+		}
+
+	 .header-grid{
+		margin:0;
+		padding:10px 0px;
+		}
+	
+	.header-grid:nth-child(3){
+		display:none;/* Vi fjerner kommunen */
+		}
+	
+	#site-title, #site-title a {
+		font-size:20px;
+		}
+	#site-description {
+		font-size:13px;
+		width:auto;
+		}
+
+	#tankefuld_logo img {
+		margin: 0 10px 0 0;
+		width:70px;
+		}
+
+/* FORSIDE HEADER */
+	.home #header{
+		border-bottom:none;
+		padding:50px 0px 0px;
+		}
+	.header-wrap{
+		width:280px;
+		text-align:center;
+		}
+	.home .header-grid{
+		width:100%;
+		margin:0;
+		padding:10px 0px;
+		}
+	
+	.home .header-grid:nth-child(3){
+		display:block;
+		width: 280px;
+		float: none;
+		margin: 0;
+		text-align: left;
+		margin-top: -50px;
+		}
+	.home #tankefuld_kommune {
+		padding: 0;
+		text-align: left;
+		}
+	
+	.home #tankefuld_kommune img{
+		width:30px;
+		}
+	
+	.home #tankefuld_logo img{
+		width:85%;
+		margin:0;
+		}
+	
+	.home #site-title {
+		margin-left:auto;
+		margin-top: -245px;
+		}
+	
+	.home #site-title, .home #site-title a {
+		font-size: 25px;
+		}
+	.home #site-description {
+		display: block;
+		width: 100%;
+		margin-left: 20px;
+		font-size: 16px;
+		color: $header-site-description-color;
+		margin-top: -5px;
+		}
+
+/* --------------------------------------- */
+/* MOBIL MENU*/
+/* --------------------------------------- */
+	
+	#mobile-expand {
+		margin: 20px 0px 0px;
+		width: 100%;
+		height: 2px;
+		display: block;
+		background: $mobile-expand-bg-color;
+		}
+	.home #mobile-expand {
+		display:block;
+		margin: 40px 0px 0px;
+		}
+	
+	#mobile-expand div{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		transition:.2s ease-in-out;
+		}
+	
+	#mobile-expand img {
+		position: relative;
+		display: block;
+		width: 65px;
+		margin: -21px auto;
+		}
+	
+	#swipe-menu .menu-hovedmenu-container{
+		height: 100%;
+		overflow: scroll;
+		}
+	.big_stone {
+	width: 280px;
+	}
+	
+	/* Mobilknap vises og skjules med ren magi*/
+	#mobile-expand img:first-child {
+		display:block;
+		}
+	#mobile-expand img:nth-child(2){
+		display:none;
+		}
+	#mobile-expand.expand img:first-child {
+		display:none;
+		}
+	#mobile-expand.expand img:nth-child(2){
+		display:block;
+		}
+	
+	#mobile-expand.expand div{
+		margin-left:90px;
+		}
+	/* --------------------------------------- */
+	
+	
+	#swipe-menu .menu li:first-child a{
+		border-width: 0px 0px 1px;
+		}
+	
+	#container{
+		background-image:$container-bg-image;
+		background-size:cover;
+		background-position:center top;
+		background-repeat:no-repeat;
+		behavior: url(../PIE/PIE.htc);
+		padding-top:80px;
+		}	
+		
+	.nav_stone{
+		display:none;
+		}
+	.mob_nav_stone, .article-content .mob_nav_stone{
+		height:auto;
+		background-image:$box-top-white;
+		bakcground-position:center top;
+		width:280px;
+		padding: 30px 20px 0px;
+		margin: 0px 0px 80px 0px;
+		}
+	
+	#swipe-menu {
+		z-index:-1;
+		display:block;
+		position: fixed;
+		top: 0;
+		right: 0px;
+		height: 100%;
+		width: 180px;
+		background: $swipe-menu-background;
+		border-left: 2px solid $swipe-menu-border-left-color;
+	}
+	
+	#footer{
+		font-size:.7rem;
+		}
+	
+	.wood_stone article h1 {
+		font-size:25px;
+		}
+	
+	}
+	
+.tf_stone{
+	opacity:0;
+	}

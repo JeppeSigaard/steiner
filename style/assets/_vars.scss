@@ -1,0 +1,58 @@
+/* ------------------- */
+
+// Body
+$body-bg-color: #333; 
+$body-font-weight:100;
+$body-font-family:'century_gothic',arial,sans-serif;
+$body-base-margin:20px;
+
+
+// Fonts
+$anchor-color: #000;
+
+
+// Container
+$container-bg-color: $body-bg-color;
+$container-bg-image: url('../statics/bg-white-shaddow.png');
+$container-min-height: 900px;
+
+// Header
+$header-border-bottom-color: #ccc;
+$header-site-title-color: #ddbe97;
+$header-site-description-color: #fff;
+
+
+//Menu
+$menu-background:$body-bg-color;
+$menu-hover-background:#666;
+$menu-color:#fff;
+
+// Stones
+$box-top-white: url('../statics/box-houses-top-white.png');
+$box-top-wood: url('../statics/box-houses-top-wood.png');
+$box-bg-wood: url('../statics/box-bg-wood.png');
+$box-bottom-shade: url(../statics/box-shadow-bottom.png);
+
+    // articles
+    $article-bg: rgba(255,255,255,.8);
+    $article-header-shadow-color: #fff;
+    $aritcle-header-bg-fill: #fff;
+    $article-p-color: #4d4d4d;
+
+
+// Footer
+$footer-bg:#313131;
+$footer-border-top-color:$header-border-bottom-color;
+$footer-text-color:$header-border-bottom-color;
+$footer-to-top-image:url(../statics/footer-til-top.png);
+
+
+// Kalender
+$event-border-color:#444;
+$event-text-color:$anchor-color;
+
+
+//Mobil/tablet menu
+$mobile-expand-bg-color:$menu-color;
+$swipe-menu-background:$body-bg-color;
+$swipe-menu-border-left-color:$menu-hover-background;
