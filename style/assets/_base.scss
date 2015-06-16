@@ -13,6 +13,7 @@ body{
 	font-family:$body-font-family;
 	font-weight:$body-font-weight;
 	-webkit-font-smoothing: subpixel-antialiased;
+    color:$body-base-color;
 	}
 
 #wrapper{
@@ -24,7 +25,11 @@ body{
 	width:960px;
 	margin:0 auto;
 	transition:.2s;
-	-webkit-transition:.2s;
+    
+    @media only screen and(min-width:1280px){
+        width:1280px;
+    }
+    
 	}
 
 /* CONTAINER */

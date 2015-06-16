@@ -7,9 +7,6 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('url')?>/wp-includes/js/jquery.js"></script>
-<script type="text/javascript" src="<?php bloginfo('url')?>/wp-includes/js/masonry.js"></script>
-<script type="text/javascript" src="<?php bloginfo('url')?>/wp-includes/js/touchSwipe.js"></script>
-<script type="text/javascript" src="<?php bloginfo('url')?>/wp-includes/js/tairy.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/main.min.js"></script>
 </body>
 </html>

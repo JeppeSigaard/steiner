@@ -71,7 +71,7 @@ img{
 .wood_stone .widget-container h1, 
 .wood_stone article h1, 
 .wood_stone .entry-header h3{
-	color:#000;
+	color:$body-base-color;
 	text-decoration:none;
 	background: $aritcle-header-bg-fill;
 	display: inline;
@@ -122,6 +122,7 @@ body .fpw-layout-wrapped .fpw-featured-image {
 	}
 .front-widget-shade{
 	margin: 0;
+    left:0;
 	position: absolute;
 	display: block;
 	width: 100%;
