@@ -267,7 +267,9 @@ body {
   font-size: 14px; }
 
 .wood_stone article .entry-content h1 {
-  box-shadow: 10px 0 0 #f0f0f0, -10px 0 0 #f0f0f0; }
+  box-shadow: 10px 0 0 #f0f0f0, -10px 0 0 #f0f0f0;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone; }
 
 .wood_stone article .entry-content strong {
   font-family: century_gothic_bold; }
@@ -292,6 +294,8 @@ img {
   font-size: 20px;
   line-height: 1.65;
   box-shadow: 10px 0 0 #f0f0f0, -10px 0 0 #f0f0f0;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
   behavior: url(..PIE//PIE.htc); }
 
 body .fpw-layout-wrapped .fpw-featured-image {
@@ -304,10 +308,14 @@ body .fpw-layout-wrapped .fpw-featured-image {
   font-size: 30px;
   margin-left: 0px;
   box-shadow: 35px 0 0 #f0f0f0, -10px 0 0 #f0f0f0;
-  behavior: url(..PIE//PIE.htc); }
+  behavior: url(..PIE//PIE.htc);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone; }
 
 .big_stone .type-event h1 {
-  box-shadow: 10px 0 0 #f0f0f0, -10px 0 0 #f0f0f0; }
+  box-shadow: 10px 0 0 #f0f0f0, -10px 0 0 #f0f0f0;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone; }
 
 .wood_stone .widget-container img {
   width: 100%;

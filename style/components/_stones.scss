@@ -51,6 +51,7 @@ background-position:center top;
 	}
 .wood_stone article .entry-content	h1{
 	box-shadow: 10px 0 0 $article-header-shadow-color, -10px 0 0 $article-header-shadow-color;
+    box-decoration-break: clone;
 	}
 .wood_stone article .entry-content strong{
 	font-family:century_gothic_bold;
@@ -78,6 +79,7 @@ img{
 	font-size: 20px;
 	line-height: 1.65;
 	box-shadow: 10px 0 0 $article-header-shadow-color, -10px 0 0 $article-header-shadow-color;
+    box-decoration-break: clone;
 	behavior: url(..PIE//PIE.htc);
 	}
 
@@ -95,10 +97,12 @@ body .fpw-layout-wrapped .fpw-featured-image {
 	margin-left: 0px;
 	box-shadow: 35px 0 0 $article-header-shadow-color, -10px 0 0 $article-header-shadow-color;
 	behavior: url(..PIE//PIE.htc);
+    box-decoration-break: clone;
 	}
 	
 .big_stone .type-event h1{
 	box-shadow: 10px 0 0 $article-header-shadow-color, -10px 0 0 $article-header-shadow-color;
+    box-decoration-break: clone;
 	}
 
 .wood_stone .widget-container img{
