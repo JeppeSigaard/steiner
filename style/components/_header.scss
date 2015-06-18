@@ -7,13 +7,12 @@
 	
 .header-grid{
 	display:inline-block;
-	margin:0 -2px;
 	padding:0;
 	vertical-align:middle;
 	}
 
 #tankefuld_logo img{
-	width:85px;
+	width:185px;
 	margin:auto;
 	margin: 0 40px 0 0;
 	}
@@ -23,15 +22,18 @@
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
-	font-size: 39px;
+	font-size: 28px;
 	color: $header-site-title-color;
 	text-decoration: none;
 	text-align: left;
 	}
 
+.home #site-title, .home #site-title a {
+    font-size: 39px;
+}
+
 #site-description {
 	display:block;
-	width:350px;
 	font-size: 20px;
 	color: $header-site-description-color;
 	}
@@ -50,7 +52,7 @@
 /* FORSIDE HEADER */
 /*------------------------------------------------------------------------*/
 .home #header{
-	padding:50px 0;
+	padding:30px 0;
 	border-bottom:2px solid $header-border-bottom-color;
 	}
 
@@ -59,20 +61,20 @@
 	}
 
 .home .header-grid{
-	display:inline-block;
+	display:block;
 	margin:0 -2px;
 	padding:0;
-	width:33.3333333333%;
 	vertical-align:top;
-	float:none;
+    text-align: center;
 	}
 
 .home #tankefuld_logo{
-	width:203px;
+	max-width:480px;
 	margin:auto;
 	}
 .home #tankefuld_logo img{
-	width:203px;
+	width:100%;
+    height:auto;
 	}
 	
 .home #site-title, .home #site-title a {
@@ -87,15 +89,11 @@
 	}
 	
 .home #site-title{
-	margin-left:20px;
-	margin-top:50px;
 	margin-bottom:20px;
 	}
 	
 .home #site-description {
 	display:block;
-	width:350px;
-	margin-left:20px;
 	font-size: 20px;
 	color: $header-site-description-color;
 	}

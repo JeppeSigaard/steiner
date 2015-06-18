@@ -4,6 +4,7 @@ $steiner-bg-color:#dadada;
 $steiner-green:#a9bc99;
 $steiner-dark-grey:#555;
 $steiner-light-grey:#ccc;
+$steiner-light-grey-2:#f0f0f0;
 $steiner-yellow:rgb(169,137,12);
 
 /* ------------------- */
@@ -28,11 +29,11 @@ $container-min-height: 900px;
 // Header
 $header-border-bottom-color: $steiner-yellow;
 $header-site-title-color: $steiner-dark-grey;
-$header-site-description-color: $steiner-green;
+$header-site-description-color: $steiner-yellow;
 
 
 //Menu
-$menu-background:$body-bg-color;
+$menu-background:$steiner-light-grey-2;
 $menu-hover-background:$steiner-green;
 $menu-color:$steiner-dark-grey;
 
@@ -43,9 +44,9 @@ $box-bg-wood: url('../statics/box-bg-wood.png');
 $box-bottom-shade: url(../statics/box-shadow-bottom.png);
 
     // articles
-    $article-bg: $steiner-bg-color;
-    $article-header-shadow-color: $steiner-bg-color;
-    $aritcle-header-bg-fill: $steiner-bg-color;
+    $article-bg: $steiner-light-grey-2;
+    $article-header-shadow-color: $steiner-light-grey-2;
+    $aritcle-header-bg-fill: $steiner-light-grey-2;
     $article-p-color: $steiner-dark-grey;
 
 

@@ -23,13 +23,9 @@
 		border-bottom: none;
 		}
 
-	 .header-grid{
+    .header-grid{
 		margin:0;
-		padding:10px 0px;
-		}
-	
-	.header-grid:nth-child(3){
-		display:none;/* Vi fjerner kommunen */
+		padding:10px 0px 0px;
 		}
 	
 	#site-title, #site-title a {
@@ -39,16 +35,21 @@
 		font-size:13px;
 		width:auto;
 		}
+    
+    #tankefuld_logo{
+        width:75%;
+        margin:auto;
+    }
 
 	#tankefuld_logo img {
 		margin: 0 10px 0 0;
-		width:70px;
+		width:180px;
 		}
 
 /* FORSIDE HEADER */
 	.home #header{
 		border-bottom:none;
-		padding:50px 0px 0px;
+		padding:20px 0px 0px;
 		}
 	.header-wrap{
 		width:280px;
@@ -60,44 +61,14 @@
 		padding:10px 0px;
 		}
 	
-	.home .header-grid:nth-child(3){
-		display:block;
-		width: 280px;
-		float: none;
-		margin: 0;
-		text-align: left;
-		margin-top: -50px;
-		}
-	.home #tankefuld_kommune {
-		padding: 0;
-		text-align: left;
-		}
 	
-	.home #tankefuld_kommune img{
-		width:30px;
-		}
-	
-	.home #tankefuld_logo img{
-		width:85%;
-		margin:0;
-		}
-	
-	.home #site-title {
-		margin-left:auto;
-		margin-top: -245px;
-		}
 	
 	.home #site-title, .home #site-title a {
 		font-size: 25px;
 		}
 	.home #site-description {
-		display: block;
-		width: 100%;
-		margin-left: 20px;
 		font-size: 16px;
-		color: $header-site-description-color;
-		margin-top: -5px;
-		}
+    }
 
 /* --------------------------------------- */
 /* MOBIL MENU*/
