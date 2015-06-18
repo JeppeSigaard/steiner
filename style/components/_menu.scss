@@ -25,7 +25,7 @@
 	border-width:1px 0px;
 	}
 
-.menu li a:hover, li.current-menu-item a{
+.menu li a:hover, li.current-menu-item a, li.current_page_item  a{
 	background:$menu-hover-background;
 	}
 .menu li.current-menu-item a:hover{
