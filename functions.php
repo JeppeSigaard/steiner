@@ -102,3 +102,5 @@ return count($comments_by_type['comment']);
 return $count;
 }
 }
+
+require 'functions/custom-header.php';

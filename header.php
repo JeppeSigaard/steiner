@@ -15,7 +15,7 @@
         	<div class="header-grid">
             <div id="tankefuld_logo">
             	<a href="<?php bloginfo('url'); ?>/">
-                	<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/06/cas-logo-black.png"/>
+                	<img src="<?php header_image(); ?>"/>
                 </a>
             </div>
             </div>
