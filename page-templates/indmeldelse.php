@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+
+/*
+template name: Indmeldelse
+*/
+
+get_header(); ?>
 <nav id="swipe-menu">
 	 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </nav>
@@ -20,7 +26,7 @@
                     </section>
                 </article>
                 <div class="front-widget-shade"></div>
-                </div> <!-- wood_stone  -->
+                </div>
                 <?php get_sidebar(); ?>
                 <div class="tf_stone mob_nav_stone">
                 <nav id="btm-menu" role="navigation">
