@@ -1,0 +1,19 @@
+.smamo_gallery{
+    font-size:0;
+    margin:-5px -5px 15px;
+    box-sizing: border-box;
+    
+    a{
+        box-sizing: inherit;
+        display: inline-block;
+        padding:5px;
+        width:50%;
+        @media only screen and(min-width:480px){
+            width:33.3333%;
+        }
+        
+        img{
+            width:100%;
+        }
+    }
+}

@@ -21,10 +21,8 @@
                     </section>
                 </article>
                 <div class="front-widget-shade"></div>
-                </div> <!-- wood_stone  -->
-                
-                <?php if ( dynamic_sidebar('forside-widget-1') ) : else : endif; ?>
-                
+                </div>
+                <?php get_sidebar(); ?>
                 <div class="tf_stone mob_nav_stone">
                 <nav id="btm-menu" role="navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
@@ -36,5 +34,4 @@
     </section>
 </div> <!-- wrap-960 -->
 </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

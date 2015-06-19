@@ -15,7 +15,8 @@ get_header(); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
                 </nav>
 			</div>
-             <?php if ( dynamic_sidebar('front-widget-1') ) : else : endif; ?>
+            <?php get_sidebar(); ?>
+            <?php if ( dynamic_sidebar('front-widget-1') ) : else : endif; ?>
             
             <div class="tf_stone mob_nav_stone">
                 <nav id="btm-menu" role="navigation">
@@ -23,18 +24,7 @@ get_header(); ?>
                 </nav>
 			</div>
            
-        </div>    
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <section class="entry-content">
-				<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
-                <?php the_content(); ?>
-                <div class="entry-links"><?php wp_link_pages(); ?></div>
-            </section>
-        </article>
-        <?php if ( ! post_password_required() ) comments_template('', true); ?>
-        <?php endwhile; endif; ?>
+        </div>
     </section>
-    <?php get_sidebar(); ?>
 </div> <!-- wrap-960 -->
 <?php get_footer(); ?>

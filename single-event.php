@@ -16,12 +16,11 @@ get_header(); ?>
                 <div class="tf_stone wood_stone big_stone" >
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <header class="entry-header">
-                        	<h3><?php eo_the_start($date_format); ?></h3>
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                         </header><!-- .entry-header -->
                         <div class="entry-content">
                         <?php if ( has_post_thumbnail() ) { ?>
-                        <span class="alignleft"><?php the_post_thumbnail( $size, $attr ); ?></span>
+                        <span class="alignleft"><?php the_post_thumbnail(); ?></span>
                         <?php } ?>
                             <!-- Get event information, see template: event-meta-event-single.php -->
                             <?php eo_get_template_part('event-meta','event-single'); ?>
@@ -32,9 +31,7 @@ get_header(); ?>
                     </article><!-- #post-<?php the_ID(); ?> -->
                     <div class="front-widget-shade"></div>
 				</div> <!-- big stone-->
-                
-                <?php if ( dynamic_sidebar('event-widget-1') ) : else : endif; ?>
-                
+                <?php get_sidebar(); ?>
                 <div class="tf_stone mob_nav_stone">
                 <nav id="btm-menu" role="navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'event-menu' ) ); ?>
