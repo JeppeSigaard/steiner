@@ -581,7 +581,7 @@ body .fpw-layout-wrapped .fpw-featured-image {
   transition: .2s;
   -webkit-transition: .2s;
   -ms-transition: .2s;
-  background-image: url(../statics/footer-til-top.png);
+  background-image: url(../statics/pagetop.png);
   background-position: center;
   background-repeat: no-repeat;
   behavior: url(../PIE/PIE.htc); }
