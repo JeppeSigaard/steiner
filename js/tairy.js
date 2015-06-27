@@ -3,7 +3,7 @@
 //////////////////////////////////
 
 
-
+var $container;
 $(document).ready(function(){
 	
 	// Aktiver swipe (flyt evt til mobil/tablet only)
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		
 	// indstil masonry, når dokumentet hentes
 	setTimeout(function(){
-	var $container = $('#tankefuld_stones');
+	$container = $('#tankefuld_stones');
 	// initialize
 	$container.masonry({
 	  itemSelector: '.tf_stone',

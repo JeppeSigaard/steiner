@@ -3,3 +3,4 @@
 // @koala-append 'touchSwipe.js';
 // @koala-append 'lightbox.js';
 // @koala-append 'tairy.js';
+// @koala-append 'form.js';

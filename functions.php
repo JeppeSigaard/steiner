@@ -31,5 +31,6 @@ function tankefuld_filter_wp_title($title){
 
 require 'functions/custom-header.php';
 require 'functions/post-type-gallery.php';
+require 'functions/post-type-indmeldelse.php';
 require 'functions/meta-box.php';
 require 'functions/images.php';

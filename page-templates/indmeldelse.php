@@ -23,6 +23,7 @@ get_header(); ?>
                  	<h1 class="entry-title"><?php the_title(); ?> </h1> 
                     <section class="entry-content">
                         <?php the_content(); ?>
+                        <?php get_template_part('modules/form','enlist');?>
                     </section>
                 </article>
                 <div class="front-widget-shade"></div>
