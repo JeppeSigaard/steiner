@@ -7,8 +7,7 @@ function tankefuld_setup(){
     global $content_width;
     if ( ! isset( $content_width ) ) $content_width = 640;
     register_nav_menus(
-    array( 	'main-menu' => __( 'Forsidens Menu', 'tankefuld' ),
-            'event-menu' => __( 'Event Menu', 'tankefuld' )
+    array( 	'main-menu' => __( 'Hovedmenu', 'tankefuld' ),
     ));
 }
 
