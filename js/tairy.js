@@ -43,14 +43,15 @@ $(document).ready(function(){
 		});
 		
 	// indstil masonry, når dokumentet hentes
-	setTimeout(function(){
-	$container = $('#tankefuld_stones');
-	// initialize
-	$container.masonry({
-	  itemSelector: '.tf_stone',
-	  columnWidth: 320
-	});
-	},200);
+	imagesLoaded( document.querySelector('#content'), function( instance ) {
+        var $container = $('#tankefuld_stones');
+        // initialize
+        $container.masonry({
+          itemSelector: '.tf_stone',
+          columnWidth: 320
+        });
+    });
+	
 	
 	// Mobil sidemenu
 	$('#mobile-expand').click(function(){
