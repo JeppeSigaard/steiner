@@ -34,3 +34,32 @@
 #mobile-expand{
 	display:none;
 	}
+
+
+.menu li.current-menu-parent,
+.menu li.current-menu-item.menu-item-has-children{
+    
+    >a{
+        background:$menu-hover-background;
+        border-width:0px;
+    }
+    
+    ul{
+        display: block;
+    }
+}
+.menu li ul{
+    display: none;
+    
+    li a{
+        background:lighten($menu-hover-background,20);
+        
+        &:hover{
+            background:$menu-hover-background;
+        }
+    }
+    
+    li.current-menu-item a{
+        background:$menu-hover-background;
+    }
+}

@@ -66,7 +66,6 @@ while($i < 55){
 }
 
 
-echo $content;
 $title = 'Ny inmeldelse '.date_i18n('Y-m-d H.i').' : '.$values['kname'];
 if($kidcount > 0){
 $title .= ' +'.$kidcount;

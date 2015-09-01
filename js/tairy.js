@@ -107,7 +107,7 @@ $(document).ready(function(){
 			}
 		});
 	
-	$('.tf_stone').delay(200).animate({opacity:1},400);
+	$('.tf_stone').animate({opacity:1},100);
 	
 	
 });

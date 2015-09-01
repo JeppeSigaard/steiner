@@ -116,6 +116,9 @@ var showHiddenClone = function(e,t){
 
 var handleResponse = function(response,form){
     form.removeClass('loading');
+    if(response.success_msg){
+        form.replaceWith(response.success_msg);
+    }
 };
 
 
@@ -166,7 +169,7 @@ var addFormEventListeners = function(){
             
             if(url !== '' && required === 0 && invalid === 0){
                 if(!form.hasClass('loading')){
-                    //form.addClass('loading');
+                    form.addClass('loading');
                     formSend(form,url);
                 }
             }
